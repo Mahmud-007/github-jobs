@@ -1,3 +1,5 @@
+
+
 html,
 body {
   padding: 0;
@@ -13,4 +15,8 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.logo {
+  width: 10%;
 }
