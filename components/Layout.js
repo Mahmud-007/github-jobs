@@ -22,7 +22,7 @@ const Layout = ({children}) => {
             </div>
         </header>
         <main>{children}</main>
-        <footer>footer</footer>
+        
       </div> );
 }
  

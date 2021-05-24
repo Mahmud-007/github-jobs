@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 const JobList = ({jobs}) => {
     return ( 
         <div>
@@ -14,12 +16,14 @@ const JobList = ({jobs}) => {
                 <tbody>
                     {
                         jobs.map((job)=>(
-                            <tr>
-                                <td>{job.title}</td>
-                                <td>{job.company}</td>
-                                <td>{job.type}</td>
-                                <td>{job.location}</td>
-                            </tr>
+                            <Link href={job.url}>
+                                <tr>
+                                    <td>{job.title}</td>
+                                    <td>{job.company}</td>
+                                    <td>{job.type}</td>
+                                    <td>{job.location}</td>
+                                </tr>
+                            </Link>
                         ))
                     }
                 </tbody>
